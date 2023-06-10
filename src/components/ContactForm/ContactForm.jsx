@@ -7,8 +7,8 @@ export default function ContactForm({ addingNewContact }) {
   const [number, setNumber] = useState('');
 
   const changeHandler = e => {
-    const { elem, value } = e.currentTarget;
-    switch (elem) {
+    const { name, value } = e.currentTarget;
+    switch (name) {
       case 'name':
         setName(value);
         break;
